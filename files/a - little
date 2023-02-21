@@ -1,0 +1,11 @@
+1. Semua logika berada pada folder App/http/controller
+2. semua pengaturan model ada pada folder App/models/*
+3. untuk file tampilan atau view berada pada folder resources/views/*
+4. pengaturan url berada pada routes/web.php
+5. semua kontroller menangani models tersendiri . jadi misalkan controller kriteria menangani models kriteria dan view criteria ( satu mvc) .
+jika ada models selain itu , itu diperlukan untuk keperluan join table
+6. konfigurasi field database dan contoh data berada pada folder database/* . migration ( php artisan migrate ): unt
+
+7. untuk eksport excel bisa dikustom field yang dibutuhkan , berada pada folder App/Exports/
+8. file NilaiController line 64 : hilangkan komen untuk membatasi 1 nasabah 1 penilaian
+9. penamaan function sudah berusaha mengikuti standar laravel agar mudah pemahaman kecuali function kustom yang memang perlu nama berbeda
