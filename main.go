@@ -14,6 +14,8 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 	go func() {
 		time.Sleep(10 * time.Second)
 
+		// body, err := ioutil.ReadAll(r.Body)
+
 		done <- true
 	}()
 
